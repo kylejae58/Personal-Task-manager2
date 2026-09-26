@@ -3,6 +3,7 @@ Personal Task Manager
 A simple Laravel web application for managing personal tasks. Users can create, view, edit, delete, and update the status of tasks from Pending to Completed.
 
 Project Information
+<br>
 Item	Details
 Project Code	WST21
 Student Name	KYLE JAE R. CAPITO
