@@ -1,0 +1,246 @@
+/* =========================
+   BASIC PAGE
+========================= */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #e5e7eb;
+    color: #1f2937;
+}
+
+main {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    margin-bottom: 20px;
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: white;
+    padding: 20px;
+
+    border: 2px solid #374151;
+    border-radius: 12px;
+
+    box-shadow: 5px 5px 0 #374151;
+}
+
+.header h1 {
+    margin: 0 0 8px;
+}
+
+.header p {
+    margin: 0;
+    color: #6b7280;
+}
+
+
+/* =========================
+   BACK BUTTON
+========================= */
+
+.page-back-btn {
+    display: inline-block;
+    margin-bottom: 10px;
+
+    color: #374151;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.page-back-btn:hover {
+    color: #16a34a;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.task-form {
+    background: white;
+
+    padding: 25px;
+
+    border: 2px solid #374151;
+    border-radius: 12px;
+
+    box-shadow: 5px 5px 0 #374151;
+}
+
+.new-task-form {
+    margin-top: 20px;
+}
+
+
+/* =========================
+   FORM GRID
+========================= */
+
+.task-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+
+/* =========================
+   LABELS
+========================= */
+
+label {
+    display: block;
+    margin-bottom: 6px;
+
+    color: #374151;
+    font-weight: bold;
+}
+
+
+/* =========================
+   INPUTS
+========================= */
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+
+    box-sizing: border-box;
+
+    background: white;
+
+    border: 2px solid #9ca3af;
+    border-radius: 8px;
+
+    color: #1f2937;
+    font-size: 15px;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #16a34a;
+}
+
+
+/* =========================
+   BUTTON AREA
+========================= */
+
+.page-form-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* =========================
+   ADD BUTTON
+========================= */
+
+.add-btn {
+    padding: 10px 16px;
+
+    background: #16a34a;
+    color: white;
+
+    border: 2px solid #166534;
+    border-radius: 8px;
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    background: #15803d;
+}
+
+
+/* =========================
+   CANCEL BUTTON
+========================= */
+
+.cancel-btn {
+    display: inline-block;
+
+    padding: 10px 16px;
+
+    background: white;
+    color: #374151;
+
+    border: 2px solid #374151;
+    border-radius: 8px;
+
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cancel-btn:hover {
+    background: #ea580c;
+    color: white;
+    border-color: #c2410c;
+}
+
+
+/* =========================
+   STATUS
+========================= */
+
+select {
+    cursor: pointer;
+}
+
+select option[value="Pending"] {
+    color: #ea580c;
+}
+
+select option[value="Completed"] {
+    color: #16a34a;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    main {
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .header-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .task-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page-form-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .add-btn,
+    .cancel-btn {
+        text-align: center;
+    }
+}

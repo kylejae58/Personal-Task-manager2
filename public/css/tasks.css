@@ -1,0 +1,444 @@
+/* =========================
+   BASIC PAGE
+========================= */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #e5e7eb;
+    color: #1f2937;
+}
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    margin-bottom: 25px;
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: white;
+    padding: 20px;
+
+    border: 2px solid #374151;
+    border-radius: 12px;
+
+    box-shadow: 5px 5px 0 #374151;
+}
+
+.header h1 {
+    margin: 5px 0;
+    font-size: 32px;
+}
+
+.header p {
+    margin: 0;
+    color: #6b7280;
+}
+
+
+/* =========================
+   HOME BUTTON
+========================= */
+
+.back-btn {
+    display: inline-block;
+    margin-bottom: 8px;
+
+    color: #374151;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-btn:hover {
+    color: #16a34a;
+}
+
+
+/* =========================
+   ADD TASK BUTTON
+========================= */
+
+.header-add-btn {
+    display: inline-block;
+
+    padding: 12px 16px;
+
+    background: #16a34a;
+    color: white;
+
+    border: 2px solid #166534;
+    border-radius: 8px;
+
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header-add-btn:hover {
+    background: #15803d;
+}
+
+
+/* =========================
+   TASK GROUP
+========================= */
+
+.task-group {
+    background: white;
+
+    padding: 20px;
+    margin-bottom: 25px;
+
+    border: 2px solid #374151;
+    border-radius: 12px;
+
+    box-shadow: 5px 5px 0 #374151;
+}
+
+.task-group-title {
+    margin: 0 0 15px;
+}
+
+
+/* Pending */
+
+.status-pending {
+    color: #ea580c;
+}
+
+
+/* Completed */
+
+.status-completed {
+    color: #16a34a;
+}
+
+
+/* =========================
+   TASK LIST
+========================= */
+
+.task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* =========================
+   TASK ITEM
+========================= */
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px;
+    margin-bottom: 10px;
+
+    background: #f9fafb;
+
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+}
+
+.task-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+/* =========================
+   COMPLETE BUTTON
+========================= */
+
+.toggle-btn {
+    width: 24px;
+    height: 24px;
+
+    background: white;
+
+    border: 2px solid #16a34a;
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+.toggle-btn:hover {
+    background: #dcfce7;
+}
+
+.toggle-btn.completed {
+    background: #16a34a;
+    color: white;
+}
+
+
+/* =========================
+   TASK NAME
+========================= */
+
+.task-title {
+    margin: 0;
+
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.task-title.completed {
+    color: #9ca3af;
+    text-decoration: line-through;
+}
+
+
+/* =========================
+   TASK INFORMATION
+========================= */
+
+.task-meta {
+    display: flex;
+    gap: 8px;
+    margin-top: 6px;
+}
+
+.task-status,
+.task-due-date {
+    padding: 4px 8px;
+
+    border-radius: 15px;
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+/* Pending */
+
+.task-status.status-pending {
+    background: #f97316;
+    color: white;
+}
+
+
+/* Completed */
+
+.task-status.status-completed {
+    background: #16a34a;
+    color: white;
+}
+
+
+/* Due date */
+
+.task-due-date {
+    background: #d1d5db;
+    color: #374151;
+}
+
+
+/* Description */
+
+.task-description {
+    margin: 6px 0 0;
+
+    color: #6b7280;
+    font-size: 14px;
+}
+
+
+/* =========================
+   ACTION BUTTONS
+========================= */
+
+.task-actions {
+    display: flex;
+    gap: 8px;
+}
+
+
+/* Edit */
+
+.edit-btn {
+    padding: 8px 12px;
+
+    background: #16a34a;
+    color: white;
+
+    border: 2px solid #166534;
+    border-radius: 8px;
+
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.edit-btn:hover {
+    background: #15803d;
+}
+
+
+/* Delete */
+
+.delete-btn {
+    padding: 8px 12px;
+
+    background: white;
+    color: #374151;
+
+    border: 2px solid #374151;
+    border-radius: 8px;
+
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.delete-btn:hover {
+    background: #ea580c;
+    color: white;
+    border-color: #c2410c;
+}
+
+
+/* Save */
+
+.save-btn {
+    padding: 8px 12px;
+
+    background: #16a34a;
+    color: white;
+
+    border: 2px solid #166534;
+    border-radius: 8px;
+
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.save-btn:hover {
+    background: #15803d;
+}
+
+
+/* =========================
+   EDIT FORM
+========================= */
+
+.task-edit {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.task-form {
+    background: white;
+
+    padding: 20px;
+
+    border: 2px solid #374151;
+    border-radius: 10px;
+}
+
+.task-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+
+    font-weight: bold;
+    color: #374151;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+
+    box-sizing: border-box;
+
+    background: white;
+
+    border: 2px solid #9ca3af;
+    border-radius: 8px;
+
+    color: #1f2937;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #16a34a;
+}
+
+
+/* =========================
+   EMPTY MESSAGE
+========================= */
+
+.empty-state {
+    color: #6b7280;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    main {
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .header-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .header-add-btn {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .task-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .task-actions {
+        width: 100%;
+    }
+
+    .task-actions form,
+    .task-actions button {
+        flex: 1;
+    }
+
+    .task-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .task-meta {
+        flex-wrap: wrap;
+    }
+}
