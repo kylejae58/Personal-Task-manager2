@@ -3,7 +3,6 @@ Personal Task Manager
 A simple Laravel web application for managing personal tasks. Users can create, view, edit, delete, and update the status of tasks from Pending to Completed.
 
 Project Information
-<br>
 Item	Details
 Project Code	WST21
 Student Name	KYLE JAE R. CAPITO
@@ -78,7 +77,7 @@ composer install
 
 3. Create the Environment File
 
-Copy the example environment file:
+Copy the example environment file.
 
 Windows:
 
@@ -140,7 +139,6 @@ The application will normally be available at:
 
 http://localhost:8000
 
-
 Open the URL in your web browser.
 
 Vite Development Server
@@ -182,7 +180,7 @@ PATCH	/tasks/{task}/toggle	Toggle Pending/Completed status
 DELETE	/tasks/{task}	Delete a task
 CRUD Operations
 
-The application supports the following task operations:
+The application supports the following task operations.
 
 Create
 
@@ -226,7 +224,7 @@ Before submitting the project, make sure all required task-management functions 
 Troubleshooting
 Clear Laravel Cache
 
-If changes are not appearing correctly, you can clear the Laravel caches:
+If changes are not appearing correctly, clear the Laravel caches:
 
 php artisan optimize:clear
 
@@ -279,11 +277,19 @@ Before submitting the project, verify the following:
 
 Project Status
 
-The required task-management features are implemented, including CRUD operations, task status management, optional due dates, and dashboard task displays.
+The required task-management features are implemented, including:
+
+CRUD operations
+
+Task status management
+
+Optional due dates
+
+Dashboard task displays
 
 Before submission, verify the application locally and remove or fix any unused routes.
 
-Note: If /calendar is registered in routes/web.php, make sure a corresponding resources/views/calendar.blade.php view exists before submission. Otherwise, remove the unused /calendar route.
+Note: If /calendar is registered in routes/web.php, make sure a corresponding resources/views/calendar.blade.php view exists. Otherwise, remove the unused /calendar route.
 
 Author
 
